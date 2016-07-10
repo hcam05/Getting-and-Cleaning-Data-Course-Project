@@ -1,0 +1,36 @@
+---
+title: "Codebook"
+author: "hcam"
+date: "July 10, 2016"
+output: html_document
+---
+
+##This summarises the Getting and Cleaning Data Course Project.
+
+The data can be found at the following link.
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+The analysis generates a number of variables to read the individual text files into data tables.  
+
+* activity
+* features
+* subData
+* subTest
+* subTrain
+* xData
+* yData
+* xTest
+* yTest
+* xTrain
+* yTrain
+
+The script combines the data and filters for the mean and standard deviation for each measurement. The output is saved into the **UCIdata** data frame.
+
+A tidy data set is generated with the average of each variable for each activity and each subject.  This is saved into the **UCIdatatidy** data frame, and **UCIdatatidy.txt**.
+
+
+
+```{r}
+
+
+
